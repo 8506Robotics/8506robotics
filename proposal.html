@@ -1,0 +1,129 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<!--<meta name="description" content="Board Game Online - ">-->
+    <meta name='description' content='Board Game Online is an incredibly weird multiplayer game. Join the fun and play for free in your browser with friends or strangers! No account required!'>
+		<meta name="keywords" content="board game online, browser game, game, multiplayer, board games online, board game, board games">
+		
+		<title>Board Game Online</title>
+		
+		<style>
+			html{
+				background: #9AF8F4;
+			}
+			#loadMessage{
+				position: absolute;
+				left: calc(50% - 500px);
+				top: calc(50% - 200px);
+				width: 1000px;
+				height: 400px;
+				text-align: center;
+				font-size: 80px;
+				font-weight: bold;
+				font-family: cursive;
+				z-index: 2000;
+			}
+		</style>
+		
+		<script>
+			var InitBag = {"Salt":42,"LastUpdate":4450524,"JoinError":"","Maintenance":{"Status":0,"Text":""},"News":[{"ID":2000,"Time":1409481000,"Type":0,"Content":"A new thermometer has gone live with two interface and gameplay improvements! Visual item cooldowns and in-game Jukebox voting!","Priority":0},{"ID":2001,"Time":1409481000,"Type":1,"Content":"The <b>Quantum Crystallizer<\/b> has been added to the Doctor Who rewards.","Priority":0},{"ID":1994,"Time":1409308200,"Type":1,"Content":"The Alchemist skill <b>Concoct<\/b> and the <b>Improbability Device<\/b> now have unique sounds.","Priority":0},{"ID":1995,"Time":1409308200,"Type":3,"Content":"A temporary bug with Concoct not working has been fixed.","Priority":0},{"ID":1996,"Time":1409308200,"Type":0,"Content":"Maintenance has been scheduled at 12:00 noon GMT+2. Game creation will be disabled 20 minutes beforehand. The maintenance period should not last longer than 10 minutes. We are sorry for the inconvenience caused.<br>\r\n<b>Update 11:57:<\/b> Maintenance has started.<br>\r\n<b>Update 11:58:<\/b> Maintenance is done.","Priority":0},{"ID":1997,"Time":1409308200,"Type":0,"Content":"We added a new in-game Poll: <a href='?page=poll_results' class='site_link'><i>'We recently lowered the Action Timer for many events to speed up the game. Do you like this update?'<\/i><\/a>","Priority":0},{"ID":1998,"Time":1409308200,"Type":2,"Content":"<b>Chocolate Salty Balls<\/b> now move you 8-12 spaces forward, up from 4-7. Mojo duration increased to 15 turns, up from 14. However, you now also gain Dehydration for 4 turns.","Priority":0},{"ID":1999,"Time":1409308200,"Type":1,"Content":"The <b>Gallifreyan Time Watch<\/b> has been added to the Doctor Who rewards. You can now choose your reward when you've solved the mystery.","Priority":0},{"ID":1990,"Time":1409049000,"Type":2,"Content":"Shops now always have a 15 second Action Timer for any action beyond the first item you buy. This should urge players to play a bit faster in a shop event.","Priority":0},{"ID":1991,"Time":1409049000,"Type":3,"Content":"Donations via Paysafecard should now work once again on our new server!","Priority":0},{"ID":1992,"Time":1409049000,"Type":1,"Content":"A <b>Shield<\/b> can now be used to defend yourself against the <b>Burning Arrow<\/b> in the Pyramid.","Priority":0},{"ID":1993,"Time":1409049000,"Type":0,"Content":"A new thermometer has gone live with two new Doctor Who rewards!","Priority":0},{"ID":1987,"Time":1408962600,"Type":1,"Content":"The Roll Phase of the game now always has a 10 second Action Timer per screen. If the player fails to click the Continue button in those 10 seconds, the game will continue automatically.","Priority":0},{"ID":1988,"Time":1408962600,"Type":2,"Content":"Many events with very little text have had their Action Timer reduced to 10 seconds with an Auto-Continue.","Priority":0},{"ID":1989,"Time":1408962600,"Type":2,"Content":"The Pawn Shop owner now grows bored of players who spend more than 3 minutes at his shop.","Priority":0}],"Thermo":{"ThermoNum":38,"Img":"3","Goals":[{"ID":186,"Amount":40000,"Info":"Jukebox Voting - We'll be adding a new system to the Jukebox event, allowing all players to mark their favorite song so that everyone can see if players want a specific song to be played. Whether or not the current player uses the vote results, is up to him or her.","IsActivated":0},{"ID":185,"Amount":20000,"Info":"Item Cooldowns - We're making improvements to the Inventory, allowing players to quickly see what the cooldowns of all their items and skills are. You will no longer need to read item tooltips to check whether an item is on cooldown, thanks to a visual counter per item \/ skill that is on cooldown.<br><br>This will also take away confusion for new players who don't read tooltips carefully to see that an item or skill can be on cooldown.","IsActivated":0}],"Total":13677},"Users":[{"ID":156601,"Name":"stevepickle","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":88,"Online":1},{"ID":153636,"Name":"Supermegaspaceman","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":70,"Online":1},{"ID":113763,"Name":"Blackyme","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":52,"Online":1},{"ID":154923,"Name":"Sigdignia","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":377,"Online":1},{"ID":158008,"Name":"DatTurtle","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":196,"Online":1},{"ID":158204,"Name":"AmethystEsp","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":69,"Online":1},{"ID":79452,"Name":"cooer","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":20,"Online":1},{"ID":133081,"Name":"Whisk","Privileges":0,"Donated":0,"LobbyTitle":"Indiana","GameSettings":81,"Online":1},{"ID":157987,"Name":"wizzy","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":196,"Online":1},{"ID":153068,"Name":"CriticalHitGaming","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":2916,"Online":1},{"ID":5656,"Name":"Vamic","Privileges":131072,"Donated":3600,"LobbyTitle":"","GameSettings":178,"Online":1},{"ID":153994,"Name":"leastiel","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":73,"Online":1},{"ID":7151,"Name":"Jackassrabbit","Privileges":0,"Donated":750,"LobbyTitle":"Lucky","GameSettings":74,"Online":1},{"ID":156138,"Name":"Moonscar","Privileges":0,"Donated":1500,"LobbyTitle":"_Stark","GameSettings":3252,"Online":1},{"ID":156119,"Name":"Gastarbajter","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":3860,"Online":1},{"ID":96584,"Name":"jadeharleysdogpenis","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":89,"Online":1},{"ID":158355,"Name":"Captorine","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":89,"Online":1},{"ID":25304,"Name":"bael","Privileges":0,"Donated":0,"LobbyTitle":"_Targaryen","GameSettings":84,"Online":1},{"ID":34236,"Name":"Garf","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":596,"Online":1},{"ID":134293,"Name":"DarkiUmbreon","Privileges":0,"Donated":1100,"LobbyTitle":"_Baratheon","GameSettings":89,"Online":1},{"ID":19634,"Name":"Hsda","Privileges":0,"Donated":0,"LobbyTitle":"Challenger","GameSettings":681,"Online":1},{"ID":77409,"Name":"Gamora","Privileges":0,"Donated":9200,"LobbyTitle":"Jungle","GameSettings":245,"Online":1},{"ID":158156,"Name":"RoxasRulesYoAss","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":88,"Online":1},{"ID":152656,"Name":"BenKenobi","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":132,"Online":1},{"ID":155277,"Name":"ShuddupMeg","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":81,"Online":1},{"ID":59264,"Name":"Gabberswagen","Privileges":0,"Donated":1200,"LobbyTitle":"_Bunny","GameSettings":416,"Online":1},{"ID":136760,"Name":"connorwood","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":68,"Online":1},{"ID":1390,"Name":"Hazzard","Privileges":131072,"Donated":1750,"LobbyTitle":"Jungle","GameSettings":84,"Online":1},{"ID":137479,"Name":"celticalder","Privileges":0,"Donated":4000,"LobbyTitle":"","GameSettings":84,"Online":1},{"ID":29662,"Name":"Phantasm","Privileges":0,"Donated":2242,"LobbyTitle":"","GameSettings":84,"Online":1},{"ID":29329,"Name":"Peridot","Privileges":0,"Donated":11112,"LobbyTitle":"","GameSettings":661,"Online":1},{"ID":119116,"Name":"Rakso","Privileges":0,"Donated":0,"LobbyTitle":"_the Human","GameSettings":416,"Online":1},{"ID":157412,"Name":"hoopla","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":3249,"Online":1},{"ID":8573,"Name":"leonsc","Privileges":0,"Donated":0,"LobbyTitle":"_the Human","GameSettings":72,"Online":1},{"ID":154091,"Name":"tyrannosaurusross","Privileges":0,"Donated":0,"LobbyTitle":"_Stark","GameSettings":85,"Online":1},{"ID":52115,"Name":"Kerberos","Privileges":0,"Donated":0,"LobbyTitle":"_Baratheon","GameSettings":65,"Online":1},{"ID":111625,"Name":"Brayness","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":196,"Online":1},{"ID":38022,"Name":"starscream","Privileges":0,"Donated":0,"LobbyTitle":"_Jones","GameSettings":648,"Online":1},{"ID":158159,"Name":"rhythmixer","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":932,"Online":1},{"ID":84115,"Name":"Spybot","Privileges":0,"Donated":2200,"LobbyTitle":"","GameSettings":84,"Online":1},{"ID":141280,"Name":"ivywow","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":81,"Online":1},{"ID":17409,"Name":"BroDash","Privileges":0,"Donated":0,"LobbyTitle":"_the Human","GameSettings":612,"Online":1},{"ID":157944,"Name":"kirbydance","Privileges":0,"Donated":0,"LobbyTitle":"","GameSettings":84,"Online":1},{"ID":2,"Name":"DysprosiumDy","Privileges":67108863,"Donated":0,"Online":0},{"ID":4,"Name":"Silicon","Privileges":66060287,"Donated":0,"Online":0}],"OpenGames":[],"RunningGames":[{"ID":1727026,"EncID":"hprq","Name":"Short Game","Finish":100,"ServerNumber":2,"HostNum":0,"GameMode":416,"TotalPlayers":5,"TimeCreated":1409587448,"ActionTimer":20,"MaxPlayers":6,"StartRupees":15,"Disarmed":1,"Reinforcements":1,"AvailableClasses":32766,"WildcardShops":10,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":3,"Name":"Sigdignia","UserID":154923},{"PlayerNumber":2,"Name":"BroDash","UserID":17409},{"PlayerNumber":4,"Name":"#Steven","UserID":0},{"PlayerNumber":0,"Name":"AmethystEsp","UserID":158204},{"PlayerNumber":1,"Name":"ivywow","UserID":141280}],"NumPlayers":5},{"ID":1727022,"EncID":"hprm","Name":"My Game","Finish":150,"ServerNumber":2,"HostNum":0,"GameMode":0,"TotalPlayers":4,"TimeCreated":1409586984,"ActionTimer":25,"MaxPlayers":16,"StartRupees":12,"Disarmed":0,"Reinforcements":0,"AvailableClasses":14842,"WildcardShops":20,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":0,"Name":"#Maugbowa","UserID":0},{"PlayerNumber":1,"Name":"#Jingo","UserID":0},{"PlayerNumber":3,"Name":"Brayness","UserID":111625},{"PlayerNumber":2,"Name":"#Squiffy","UserID":0}],"NumPlayers":4},{"ID":1727018,"EncID":"hpri","Name":"Butts.","Finish":150,"ServerNumber":2,"HostNum":0,"GameMode":128,"TotalPlayers":3,"TimeCreated":1409586549,"ActionTimer":25,"MaxPlayers":8,"StartRupees":24,"Disarmed":0,"Reinforcements":5,"AvailableClasses":14842,"WildcardShops":20,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":2,"Name":"#bananaman","UserID":0},{"PlayerNumber":0,"Name":"#maesar","UserID":0},{"PlayerNumber":1,"Name":"#SpaceLawyers","UserID":0}],"NumPlayers":3},{"ID":1727017,"EncID":"hprh","Name":"Come and get it","Finish":350,"ServerNumber":2,"HostNum":0,"GameMode":480,"TotalPlayers":4,"TimeCreated":1409586533,"ActionTimer":15,"MaxPlayers":6,"StartRupees":25,"Disarmed":0,"Reinforcements":1,"AvailableClasses":32766,"WildcardShops":10,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":2,"Name":"ShuddupMeg","UserID":155277},{"PlayerNumber":3,"Name":"leonsc","UserID":8573},{"PlayerNumber":1,"Name":"SylveonRapingGlaceon","UserID":158305},{"PlayerNumber":0,"Name":"ZybourneClock","UserID":20167}],"NumPlayers":4},{"ID":1727014,"EncID":"hpre","Name":"half pound butter","Finish":300,"ServerNumber":2,"HostNum":0,"GameMode":0,"TotalPlayers":2,"TimeCreated":1409586343,"ActionTimer":30,"MaxPlayers":16,"StartRupees":12,"Disarmed":0,"Reinforcements":0,"AvailableClasses":14842,"WildcardShops":20,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":2,"Name":"perfectkills","UserID":154425},{"PlayerNumber":0,"Name":"tyrannosaurusross","UserID":154091}],"NumPlayers":2},{"ID":1727013,"EncID":"hprd","Name":"Mr. Johnston and The Juice Crew","Finish":500,"ServerNumber":2,"HostNum":0,"GameMode":352,"TotalPlayers":5,"TimeCreated":1409586233,"ActionTimer":20,"MaxPlayers":6,"StartRupees":20,"Disarmed":3,"Reinforcements":1,"AvailableClasses":32766,"WildcardShops":15,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":0,"Name":"#BigJim","UserID":0},{"PlayerNumber":4,"Name":"Rhisereld","UserID":153428},{"PlayerNumber":2,"Name":"#TheTwins","UserID":0},{"PlayerNumber":3,"Name":"Whisk","UserID":133081},{"PlayerNumber":1,"Name":"ElMoMo","UserID":157804}],"NumPlayers":5},{"ID":1727011,"EncID":"hprb","Name":"My Game","Finish":152,"ServerNumber":2,"HostNum":0,"GameMode":4576,"TotalPlayers":6,"TimeCreated":1409585940,"ActionTimer":30,"MaxPlayers":16,"StartRupees":25,"Disarmed":1,"Reinforcements":1,"AvailableClasses":32766,"WildcardShops":10,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":7,"Name":"peteian","UserID":157104},{"PlayerNumber":4,"Name":"OctaScratch","UserID":80159},{"PlayerNumber":1,"Name":"rhythmixer","UserID":158159},{"PlayerNumber":2,"Name":"#newbees","UserID":0},{"PlayerNumber":5,"Name":"BenKenobi","UserID":152656},{"PlayerNumber":0,"Name":"Moonscar","UserID":156138}],"NumPlayers":6},{"ID":1727008,"EncID":"hpq8","Name":"Sky's the Limit!","Finish":258,"ServerNumber":2,"HostNum":0,"GameMode":352,"TotalPlayers":5,"TimeCreated":1409585682,"ActionTimer":20,"MaxPlayers":6,"StartRupees":25,"Disarmed":1,"Reinforcements":3,"AvailableClasses":32766,"WildcardShops":10,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":1,"Name":"RoxasRulesYoAss","UserID":158156},{"PlayerNumber":3,"Name":"Supermegaspaceman","UserID":153636},{"PlayerNumber":4,"Name":"Ddynamo","UserID":138172},{"PlayerNumber":0,"Name":"Arcis","UserID":109174},{"PlayerNumber":2,"Name":"Asayia","UserID":26433}],"NumPlayers":5},{"ID":1727006,"EncID":"hpq6","Name":"ghoti","Finish":750,"ServerNumber":2,"HostNum":0,"GameMode":8544,"TotalPlayers":3,"TimeCreated":1409585621,"ActionTimer":30,"MaxPlayers":16,"StartRupees":15,"Disarmed":3,"Reinforcements":0,"AvailableClasses":32766,"WildcardShops":20,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":1,"Name":"Kerberos","UserID":52115},{"PlayerNumber":0,"Name":"CriticalHitGaming","UserID":153068},{"PlayerNumber":2,"Name":"DimmaDonkOnAaron","UserID":153750}],"NumPlayers":3},{"ID":1726996,"EncID":"hpqW","Name":"My Game","Finish":500,"ServerNumber":2,"HostNum":1,"GameMode":4576,"TotalPlayers":4,"TimeCreated":1409585216,"ActionTimer":15,"MaxPlayers":16,"StartRupees":25,"Disarmed":0,"Reinforcements":1,"AvailableClasses":32766,"WildcardShops":10,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":1,"Name":"boobylicious","UserID":155986},{"PlayerNumber":4,"Name":"starscream","UserID":38022},{"PlayerNumber":3,"Name":"lancecorporalninja","UserID":156564},{"PlayerNumber":2,"Name":"luukeri","UserID":157520}],"NumPlayers":4},{"ID":1726981,"EncID":"hpqH","Name":"jwnltniwl","Finish":406,"ServerNumber":2,"HostNum":1,"GameMode":0,"TotalPlayers":2,"TimeCreated":1409584446,"ActionTimer":25,"MaxPlayers":16,"StartRupees":12,"Disarmed":0,"Reinforcements":0,"AvailableClasses":14842,"WildcardShops":20,"Status":1,"IsPrivate":false,"Players":[{"PlayerNumber":3,"Name":"#adsfds","UserID":0},{"PlayerNumber":1,"Name":"Oriana","UserID":155556}],"NumPlayers":2}],"Servers":[{"ID":1,"Number":0,"Region":2,"Availability":1,"ActivePlayers":0},{"ID":2,"Number":1,"Region":2,"Availability":2,"ActivePlayers":16},{"ID":3,"Number":2,"Region":1,"Availability":2,"ActivePlayers":74}],"InitialUpdates":[]};
+		</script>
+		
+		<!-- Icon -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		
+					
+			<!-- Zipped Javascript! -->
+			<script src="/js/lib_site_3_0_10.js"></script>
+			<script src="/g/js/ach_3_0_9.js"></script>
+			<script src="/js/site_3_0_12.js"></script>
+				<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-25611690-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	
+	<body>
+		<script>
+			var loadMessages = [
+				"Are you ready<br>for this shit?!",
+				"Brace yourself,<br>mothafocka!",
+				"Prepare for<br>sexy madness!"
+			];
+			var loadMessagesFirst = [
+				"Calming down",
+				"Configuring",
+				"Dusting off",
+				"Initializing",
+				"Oiling up",
+				"Querying",
+				"Setting up",
+				"Speed testing"
+			];
+			var loadMessagesSecond = [
+				"binary",
+				"dangerous",
+				"electric",
+				"erotic",
+				"mouthwatering",
+				"scientific",
+				"sexy",
+				"suicidal",
+				"unstable",
+				"yummy"
+			];
+			var loadMessagesThird = [
+				"cowboys",
+				"Dumbledores",
+				"Gandalfs",
+				"hookers",
+				"Lolrus buckets",
+				"ninjas",
+				"pirates",
+				"sex bombs",
+				"time travel condoms",
+				"warp plasma relays"
+			];
+			
+			var loadMessage;
+			if(Math.random() < 1)
+				loadMessage = rand(loadMessages);
+			else
+				loadMessage = rand(loadMessagesFirst) + " " + rand(loadMessagesSecond) + " " + rand(loadMessagesThird) + "...";
+			
+			function rand(items){
+				return items[Math.floor(Math.random() * items.length)];
+			}
+			
+			document.body.innerHTML += "<div id='loadMessage'>Board Game Online<br>is loading!<br>" + loadMessage + "</div>";
+		</script>
+		
+		<div id="mainContent" role="main">
+			<!-- Important Stuff -->
+			<div id="loginDivContent">
+				<a href="?page=forgot_login">I forgot my name / password</a> <a href="?page=register">Register</a>
+			</div>
+			<div id="navContent">
+				<a href="/">Home</a>
+				<a href="?page=shop">BG Shop</a>
+				<a href="?page=donations">Donations</a>
+				<a href="/forum/ucp.php?mode=login&amp;bglogin=1">Forum</a>
+				<a href="?page=info">Game Info</a>
+				<a href="?page=newgame">New Game</a>
+			</div>
+			<h1>Board Game Online </h1>
+			Board Game Online is a free to play online multiplayer board game full of random crazy content. Become an assassin, catch a lolrus, use a time travel condom or unleash an explosive sheep! Hundreds of events and items make for one hell of a hilarious game!		</div>
+		
+			</body>
+</html>
+
